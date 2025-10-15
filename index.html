@@ -7,10 +7,53 @@
     <title>Home</title>
 </head>
 <style>
+    .nav {
+        border: 1px solid navy;
+    }
+
+    .nav ul {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+
+    }
+
+    .nav ul li {
+        position: relative;
+        display: block;
+        padding: .6rem 1rem;
+        margin: 0 .2rem;
+        cursor: pointer;
+    }
+
+    .nav ul li::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transform: scale(0);
+        background-color: hotpink;
+        transition: transform .3s;
+    }
+
+    .nav ul li:hover::after {
+        transform: scale(1);
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+        font-weight: 400;
+    }
+
     .epicode {
-        font-size: large; 
-        font-weight: 600; 
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        font-weight: 600;
     }
 
     .epicode:hover {
@@ -18,27 +61,52 @@
     }
 
     li a:hover {
-        color:gold;
+        color: gold;
+    }
+
+    .container {
+        border: 1px solid lightgray;
+        padding: 10px;
+        margin-top: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .esercizi {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item:nth-child(1),
+    .item:nth-child(2),
+    .item:nth-child(3),
+    .item:nth-child(4) {
+        width: 250px;
+        border: 1px solid lightgray;
+        flex-grow: 1;
     }
 </style>
 
 <body>
-    <div class="headert">
-        <h1>Home</h1>
+
+    <div class="nav">
+        <ul>
+            <li><a href="https://marcheseleo.github.io/Esercizi-Epicode/">Home</a></li>
+            <li><a href="Esercizi/primo.html">Esercizio 1</a></li>
+            <li><a href="">Esercizio 2</a></li>
+            <li><a href="">Esercizio 3</a></li>
+        </ul>
     </div>
-    <main>
-        Benvenuto nella mia pagina. Qui pubblico tutti gli esercizi, da me svolti, Web Developer di <a class="epicode"
-            href="https://epicode.com/it/corso-web-developer-part-time/?_gl=1*v1tzam*_up*MQ..*_gs*MQ..*_ga*MTg0MTUwMDIwNC4xNzYwMzY2MjE5*_ga_3K2ZX8G699*czE3NjAzNjYyMTkkbzEkZzAkdDE3NjAzNjYyMTkkajYwJGwwJGg5MTU2ODQ2Mzc.&gclid=CjwKCAjwxrLHBhA2EiwAu9EdMzYWNJhGcEOPGm-NOXqTekkVqiUou98e09aFpF4yD9uF-s54hJEHKhoCQnAQAvD_BwE&gbraid=0AAAAABxWOfpv-ehCZdC9KjREQJAOq1uaE">
-            Epicode</a>.
-        <br>
-        <nav style="max-width: 120px;">
-            <h3>Indice</h3>
-            <hr>
-            <ul>
-                <li><a href="Esercizi/primo.html">Esercizio 1</a></li>
-            </ul>
-        </nav>
-    </main>
+
+    <div class="container">
+        <h2>Home</h2>
+        <p>Benvenuto nella home della mia pagina.
+            Qui pubblico tutti gli esercizi, da me svolti, del pre-corso di Web Developer di <a class="epicode"
+                href="https://epicode.com/it/corso-web-developer-part-time/?_gl=1*v1tzam*_up*MQ..*_gs*MQ..*_ga*MTg0MTUwMDIwNC4xNzYwMzY2MjE5*_ga_3K2ZX8G699*czE3NjAzNjYyMTkkbzEkZzAkdDE3NjAzNjYyMTkkajYwJGwwJGg5MTU2ODQ2Mzc.&gclid=CjwKCAjwxrLHBhA2EiwAu9EdMzYWNJhGcEOPGm-NOXqTekkVqiUou98e09aFpF4yD9uF-s54hJEHKhoCQnAQAvD_BwE&gbraid=0AAAAABxWOfpv-ehCZdC9KjREQJAOq1uaE">
+                Epicode</a>.
+        </p>       
+    </div>
 
 </body>
 
