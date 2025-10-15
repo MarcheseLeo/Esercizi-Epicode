@@ -1,5 +1,6 @@
 .nav {
         border: 1px solid navy;
+        background-color: whitesmoke;
     }
 
     .nav ul {
@@ -41,3 +42,5 @@
         color: black;
         font-weight: 400;
     }
+
+   

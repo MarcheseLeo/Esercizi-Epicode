@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <style>
+        .container {
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        form {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 5px;
+        }
+
+        .container {
+            background-color: rgba(176, 196, 222, 0.171);
+        }
+
+        .genere-musicale {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid lightgray;
+            padding: 10px;
+            width: 1000%;
+            background-color: whitesmoke;
+        }
+
+        #termini {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            border: 1px solid lightgray;
+            padding: 10px;
+            width: 30%;
+            background-color: whitesmoke;
+        }
+
+
+        button[type="submit"] {
+            width: 30%;
+            padding: 10px;
+            background-color: rgb(87, 141, 255);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: rgb(39, 39, 226);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="https://marcheseleo.github.io/Esercizi-Epicode/">Home</a></li>
+            <li><a href="Esercizi/primo.html">Esercizio 1</a></li>
+            <li><a href="Esercizi/secondo.html">Esercizio 2</a></li>
+            <li><a href="">Esercizio 3</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <form onsubmit="alert('Registrazione completata')">
+            <div class="form-field">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="form-field">
+                <label for="cognome">Cognome</label>
+                <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome">
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua mail">
+            </div>
+            <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-field">
+                <label for="data">Data di nascita</label>
+                <input type="date" id="data" name="data">
+            </div>
+            <div class="form-field">
+                <label for="numero">Numero di telefono</label>
+                <input type="number" id="numero" name="numero" placeholder="Inserisci il tuo numero di telefono">
+            </div>
+            <div class="genere-musicale">
+                <h4>Genere musicale</h4>
+                <label for="rock">rock</label>
+                <input type="checkbox" name="rock" id="rock">
+                <label for="metal">metal</label>
+                <input type="checkbox" name="metal" id="metal">
+                <label for="pop">pop</label>
+                <input type="checkbox" name="pop" id="pop">
+                <label for="rap">rap</label>
+                <input type="checkbox" name="rap" id="rap">
+                <label for="country">country</label>
+                <input type="checkbox" name="country" id="country">
+            </div>
+
+            <label for="termini">Accetto termini e condizioni</label>
+            <div class="form-field" id="termini">
+                <input type="radio" id="accetto" name="accept" value="accetto" checked>
+                <label for="accetto">Accetto</label>
+                <input type="radio" id="rifiuto" name="accept" value="rifiuto">
+                <label for="rifiuto">Rifiuto</label>
+            </div>
+            <button type="submit" id="send">Invia registrazione</button>
+        </form>
+    </div>
+</body>
+
+</html>
