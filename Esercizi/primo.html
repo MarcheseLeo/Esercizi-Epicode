@@ -5,157 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercizio 1</title>
-
     <style>
-        body {
-            background-color: rgba(211, 211, 211, 0.384);
+        .nav {
+            border: 1px solid navy;
         }
 
-        nav ul {
+        .nav ul {
             display: flex;
+            gap: 20px;
+            flex-direction: row;
             justify-content: center;
-            align-items: center;
-            margin: 0px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-
-        }
-
-        nav ul li {
             list-style: none;
-            margin-right: 20px;
-            background-color: cornsilk;
-            padding: 5px;
-            border-radius: 5px;
+
         }
 
-        nav ul li:hover {
-            background-color: rgb(233, 216, 124);
+        .nav ul li {
+            position: relative;
+            display: block;
+            padding: .6rem 1rem;
+            margin: 0 .2rem;
+            cursor: pointer;
         }
 
-        nav ul li a {
-            list-style: n;
+        .nav ul li::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: scale(0);
+            background-color: hotpink;
+            transition: transform .3s;
+        }
+
+        .nav ul li:hover::after {
+            transform: scale(1);
+        }
+
+        .nav ul li a {
             text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            font-weight: 400;
         }
 
-        .challenge, .info {
-            background-color: rgba(255, 255, 255, 0.767);
-            border: 1px solid gainsboro;
-            border-radius: 3px;
-        }
-
-        .challenge ul {
-            list-style: square;
-        }
-
-        .challenge ul li::marker {
-            color: red;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        nav {
-            background-color: cornflowerblue;
-            margin-top: 0px;
-            border-radius: 3px;
-            margin-bottom: 20px;
-            border: 1px solid gainsboro;
-        }
-
-        main .content {
+        .container {
             display: flex;
-            justify-content: space-between;
-
+            gap: 2%;
+            flex-wrap: wrap;
+            align-content: start;
+            height: 80vh;
+            margin-top: 10px;
         }
 
-        .info{
+        .item:nth-child(1) {
+            width: 30%;
+            height: 75%;
+            border: 1px solid lightgray;
+            padding: 10px
+        }
+
+        .item:nth-child(2) {
+            flex-grow: 1;
+            height: 50%;
+            width: 60%;
+            border: 1px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .item:nth-child(3) {
+            width: 100%;
+            height: 15%;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            flex-shrink: 1;
+            border: 1px solid lightgray;
             font-family: 'Courier New', Courier, monospace;
-            padding-bottom: 20px;
-            padding-top: 20px;
             list-style: none;
         }
 
+        table td,
+        table th {
+            border: 1px solid #c9c9c9;
+            padding: 12px;
+            text-align: left;
+        }
 
+        img{
+            width: 50%;
+        }
     </style>
+
 </head>
 
 <body>
-
-    <nav>
+    <div class="nav">
         <ul>
-            <li><a href="https://marcheseleo.github.io/Esercizi-Epicode/">Home</a></li>
-            <li><a href="https://marcheseleo.github.io/Esercizi-Epicode/Esercizi/primo.html">Esercizio 1</a></li>
-            <li><a href="">Esercizio 2</a></li>
-            <li><a href="">Esercizio 3</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Docs</a></li>
         </ul>
-    </nav>
-
-    <div class="challenge">
-        <h4 style="padding-left: 20px;">Challenge</h4>
-        <h2 style="padding-left: 30px;">Crea la tua pagina HTML</h2>
-        <ul>
-            <li>Utilizza tutti i tag che hai imparato per creare la tua “pagina di presentazione”
-            </li>
-            <li>La pagina deve contenere una tua immagine, una lista di hobbies e interessi</li>
-            <li>In fondo alla pagina inserisci anche i tuoi contatti (email, numero di telefono, socials ecc.)</li>
-            <li>[EXTRA] Crea una tabella con le tue esperienze scolastiche/accademiche e lavorative!</li>
-            <li>[EXTRA] Pubblica il tuo progetto su GitHub e condividilo su Discord!</li>
-        </ul>
-
     </div>
-    <header>
-        <h2>Leonardo Marchese Grasso</h2>
-        '''Foto"'
-        <img src="" alt="">
-    </header>
 
-    <main>
-        <div class="content">
-            <div class="hobbies">
-                <h3>I miei hobbies ed interessi</h3>
-                <ul>
-                    <li>Programmazione in:</li>
-                    <ol>
-                        <li>Java</li>
-                        <li>Html, CSS, JS</li>
-                        <li>Python</li>
-                        <li>C++</li>
-                    </ol>
-                    <li>Realizzazione di circuiti con  Arduino</li>
-                    <li>primo</li>
-                    <li>primo</li>
-                    <li>primo</li>
+    <div class="container">
+        <div class="item">
+            <h2>Leonardo Marchese Grasso</h2>
+            <img src="/assets/images/mia_foto.jpg" alt="">
 
-                </ul>
-            </div>
-            <div class="sidebar">
-                <h3>Indice</h3>
-                <ul>
-                    <li>primo</li>
-                    <li>primo</li>
-                    <li>primo</li>
-                    <li>primo</li>
-                    <li>primo</li>
-                </ul>
-            </div>
+            <h3>I miei interessi sono</h3>
+            <ul class="hobbies">
+                <li>Programmazione in:</li>
+                <ol>
+                    <li>Java</li>
+                    <li>Html, CSS, JS</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ol>
+                <li>Realizzazione di circuiti con Arduino</li>
+                <li>Videogames</li>
+            </ul>
         </div>
+        <div class="item">
+            <h3>Esperienze</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scolastiche</th>
+                        <th>Anno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diploma di Maturità - Liceo Scientifico "Carlo Miranda", Frattamaggiore (NA)</td>
+                        <td>2014 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Laurea in Ingegneria Informatica (Non conseguita) </td>
+                        <td>2019 - 2022 </td>
+                    </tr>
+                    <tr>
+                        <td>Corso base (IBM) di Web Developing</td>
+                        <td>2024</td>
 
-        <div class="experiences">
-            <h3>Esperienze lavorative</h3>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
-    </main>
-    <footer>
-        <h4>Info</h4>
+        <div class="item">
+            <h4>Info</h4>
         <ul class="info">
-            <li>Tel:</li>
-            <li>Email:</li>
+             <li>Tel: +39 366740288</li>
+                <li>Email: <a href="mailto:leonardo.lol.ldp.com">leonardo.lol.ldp.com</a></li>
+
         </ul>
-
-    </footer>
-
-
+        </div>
+    </div>
 </body>
 
 </html>
