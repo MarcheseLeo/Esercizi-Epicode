@@ -1,0 +1,142 @@
+ @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Prata&display=swap");
+
+ body {
+     margin: 0;
+     font: Montserrat;
+ }
+
+ .nav {
+     margin: 8px
+ }
+
+ .main-section {
+     border: 1px solid lightgray;
+     margin: 8px;
+     padding: 10px;
+     margin-top: 10px;
+     background-color: rgba(176, 196, 222, 0.171)
+ }
+
+ .image-container {
+     height: 500px;
+     min-width: 600px;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: 1px solid lightgray;
+     background-image: url('../../../assets/images/Liberty-State-park.jpg');
+
+ }
+
+ .image-details {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .image-place-name {
+     font-family: 'Prata';
+     font-size: 64px;
+     font-weight: 400;
+
+ }
+
+ .image-location {
+     font-family: 'Prata';
+     font-size: 24px;
+     font-weight: 400;
+     margin-top: 0px;
+     color: rgb(129, 163, 194);
+ }
+
+ .image-place-name,
+ .image-location {
+     margin-bottom: 0px;
+ }
+
+ .image-location a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .image-location:hover {
+     color: rgb(120, 120, 196);
+ }
+
+ .author {
+     font-family: 'Lora', serif;
+     font-size: 14px;
+     background-color: #8682823d;
+     width: 250px;
+     padding: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     border-radius: 5px;
+     font-style: italic;
+ }
+
+ .author a {
+     color: grey;
+     font-weight: 600;
+ }
+
+ .author a:hover {
+     color: black;
+ }
+
+ .correlated-places h6 {
+     padding: 22px;
+     margin-bottom: 0px;
+     margin-top: 0px;
+     color: white;
+     font-weight: 500;
+     font-size: 22px;
+     background: linear-gradient(90deg, rgba(154, 132, 194, 1) 0%, rgba(101, 175, 226, 1) 100%);
+     border-radius: 6px;
+ }
+
+ .correlated-places {
+     width: 400px;
+     border: 1px solid lightgray;
+     border-radius: 6px;
+     display: flex;
+     flex-direction: column;
+     margin-top: 56px;
+     padding: 10px;
+     justify-content: flex-start;
+     background-color: rgba(255, 255, 255, 0.425);
+ }
+
+ .places {
+     list-style-type: none;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     border: 1px solid lightgray;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+ .place {
+     padding: 6px 22px;
+     border-bottom: 1px solid #dfdfdf;
+     color: #9A84C2
+ }
+
+ .place:hover {
+     color: #65AFE2;
+     cursor: pointer;
+ }
+
+ .place a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ footer {
+     text-align: center;
+     margin-top: 20px;
+     padding: 16px;
+     font-size: 14px;
+     color: rgb(255, 255, 255);
+     background-color: black;
+ }
