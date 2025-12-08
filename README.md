@@ -17,8 +17,18 @@ Per visualizzare il sito Github Pages clicca [qui](https://marcheseleo.github.io
  Leonardo Marchese
  * [GitHub](https://github.com/MarcheseLeo)
 
-[![Next][Next.js]][Next-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Next-url]: https://nextjs.org/
+
+### Built With
+
+* ![HTML5][HTML5.js]
+* ![CSS][CSS.js]
+* ![JavaScript][JavaScript.js]
+
+
+
+[HTML5.js]: https://img.shields.io/badge/HTML-5+-E34F26?logo=html5
+[CSS.js]: https://img.shields.io/badge/css-gray?style=for-the-badge&logo=css&logoColor=white
+[JavaScript.js]: https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square
+
