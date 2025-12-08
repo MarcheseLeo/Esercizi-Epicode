@@ -18,30 +18,7 @@
         rel="stylesheet" />
 
     <style>
-        body {
-            width: 100%;
-            height: 100vh;
-        }
-        .epicode {
-            font-size: large;
-            font-weight: 600;
-        }
-
-        .epicode:hover {
-            color: rgb(250, 27, 94);
-        }
-
-        li a:hover {
-            color: gold;
-        }
-
-        .container {
-            border: 1px solid lightgray;
-            padding: 10px;
-            margin-top: 10px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: rgba(176, 196, 222, 0.171);
-        }
+       
     </style>
 </head>
 
@@ -58,69 +35,13 @@
     </div>
 
     <div class="container">
-        <h2>Home</h2>
+        <h2 style="display: block;">Home</h2>
         <p>Benvenuto nella home della mia pagina.
             Qui pubblico tutti gli esercizi, da me svolti, del pre-corso di Web Developer di <a class="epicode"
                 href="https://epicode.com/it/corso-web-developer-part-time/?_gl=1*v1tzam*_up*MQ..*_gs*MQ..*_ga*MTg0MTUwMDIwNC4xNzYwMzY2MjE5*_ga_3K2ZX8G699*czE3NjAzNjYyMTkkbzEkZzAkdDE3NjAzNjYyMTkkajYwJGwwJGg5MTU2ODQ2Mzc.&gclid=CjwKCAjwxrLHBhA2EiwAu9EdMzYWNJhGcEOPGm-NOXqTekkVqiUou98e09aFpF4yD9uF-s54hJEHKhoCQnAQAvD_BwE&gbraid=0AAAAABxWOfpv-ehCZdC9KjREQJAOq1uaE">
                 Epicode</a>.
         </p>
     </div>
-
-    <script>
-
-        function vaiConRitardo(url) {
-        // 1. DEBUG: Controlliamo se l'URL arriva correttamente
-        // Se vedi questo alert vuoto, manca value="..." nel tuo HTML
-        if (!url) {
-            alert("Attenzione: Non è stato passato nessun link!");
-            return;
-        }
-
-        // 2. Cerchiamo l'elemento per il messaggio
-        var feedbackElement = document.getElementById("feedback");
-
-        // 3. CONTROLLO DI SICUREZZA
-        // Scriviamo il messaggio SOLO se l'elemento esiste davvero nella pagina
-        if (feedbackElement) {
-            feedbackElement.textContent = "Verrai reindirizzato tra 2 secondi...";
-        } else {
-            // Se l'elemento non c'è, lo scriviamo nella console per avvisarti (premi F12 per vedere)
-            console.log("Manca il tag <p id='feedback'>, ma procedo lo stesso.");
-        }
-
-        // 4. Avviamo il timer
-        setTimeout(function() {
-            window.location.href = url;
-        }, 500);
-    }
-
-        function vaiAlLink(url) {
-            // Controllo opzionale: se clicco sulla pagina dove sono già, non faccio nulla
-            if(window.location.href.includes(url)) return;
-
-            document.getElementById('feedback').innerText = "Caricamento in corso...";
-            setTimeout(function() {
-                window.location.href = url;
-            }, 1000);
-        }
-
-        window.addEventListener('pageshow', function(event) {
-            
-            var radios = document.querySelectorAll('input[type="radio"]');
-            var paginaAttuale = window.location.href; // L'URL completo dove ti trovi ora
-
-            radios.forEach(function(radio) {
-                // Puliamo il messaggio di attesa
-                document.getElementById('feedback').innerText = "";
-
-                if (paginaAttuale.includes(radio.value) && radio.value !== "") {
-                    radio.checked = true;  // Questa è la pagina giusta: SELEZIONA
-                } else {
-                    radio.checked = false; 
-                }
-            });
-        });
-    </script>
 
 </body>
 
