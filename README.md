@@ -25,10 +25,12 @@ Per visualizzare il sito Github Pages clicca [qui](https://marcheseleo.github.io
 * ![HTML5][HTML5.js]
 * ![CSS][CSS.js]
 * ![JavaScript][JavaScript.js]
+* ![GitHub][GitHub.js]
 
 
 
 [HTML5.js]: https://img.shields.io/badge/HTML-5+-E34F26?logo=html5
 [CSS.js]: https://img.shields.io/badge/css-gray?style=for-the-badge&logo=css&logoColor=white
 [JavaScript.js]: https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square
+[GitHub.js]: https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white
 
