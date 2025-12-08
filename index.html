@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-corso</title>
 
+    <link rel="stylesheet" href="/Esercizi/terzo/style/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <!--Google Fonts and Icons-->
     <link
         href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
@@ -16,32 +17,391 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
-
     <style>
-       
+
+     
+        
+
     </style>
 </head>
 
-
 <body>
-    <div class="nav">
-        <ul>
-            <li><a href="https://marcheseleo.github.io/Esercizi-Epicode/">Home</a></li>
-            <li><a href="Esercizi/primo/index.html">Esercizio 1</a></li>
-            <li><a href="Esercizi//secondo/index.html">Esercizio 2</a></li>
-            <li><a href="Esercizi/terzo/index.html">Esercizio 3</a></li>
-            <li><a href="Esercizi/quarto/index.html">Esercizio 4</a></li>
-        </ul>
+
+    <input type="radio" name="nav" id="item1" class="check" checked value="home" onclick="cambiaPagina(this.value);" checked>
+    <input type="radio" name="nav" id="item2" class="check" value="primo-esercizio" onclick="cambiaPagina(this.value); changeBodyCoulor('rgb(201, 55, 157)')">
+    <input type="radio" name="nav" id="item3" class="check" value="secondo-esercizio"
+        onclick="cambiaPagina(this.value); changeBodyCoulor('rgb(230, 169, 25)')">
+    <input type="radio" name="nav" id="item4" class="check" value="terzo-esercizio"
+        onclick="cambiaPagina(this.value); changeBodyCoulor('rgb(17, 148, 170)')" >
+    <input type="radio" name="nav" id="item5" class="check" value="quarto-esercizio" onclick="cambiaPagina(this.value); changeBodyCoulor('rgb(253, 121, 121)')">
+
+    <div class="center">
+        <!--=============== NavBar ===============-->
+        <div class="nav-bar" id="myNavBar">
+            <label for="item1" style="--color1: rgb(233, 215, 243); --color2: rgb(91, 55, 183)">
+                <span class="material-icons-outlined"> home </span>
+                Home
+            </label>
+
+            <label for="item2" style="--color1: rgb(246, 214, 238); --color2: rgb(201, 55, 157)">
+                <span class="material-icons-outlined"> looks_one </span>
+                Ex.
+            </label>
+
+            <label for="item3" style="--color1: rgb(251, 239, 211); --color2: rgb(230, 169, 25)">
+                <span class="material-icons-outlined"> looks_two</span>
+                Ex.
+            </label>
+
+            <label for="item4" style="--color1: rgb(209, 235, 239); --color2: rgb(17, 148, 170)">
+                <span class="material-icons-outlined"> looks_3 </span>
+                Ex.
+            </label>
+
+            <label for="item5" style="--color1: rgb(255, 205, 201); --color2: rgb(253,121, 121)">
+                <span class="material-icons-outlined"> looks_4 </span>
+                Ex.
+            </label>
+        </div>
+
+        <!--=============== Home ===============-->
+        <div id="home" class="pagina" style="display:block;">
+            <h1>Home</h1>
+            <p>Benvenuto nella home della mia pagina.
+                Qui pubblico tutti gli esercizi, da me svolti, del pre-corso di Web Developer di <a class="epicode"
+                    href="https://epicode.com/it/corso-web-developer-part-time/?_gl=1*v1tzam*_up*MQ..*_gs*MQ..*_ga*MTg0MTUwMDIwNC4xNzYwMzY2MjE5*_ga_3K2ZX8G699*czE3NjAzNjYyMTkkbzEkZzAkdDE3NjAzNjYyMTkkajYwJGwwJGg5MTU2ODQ2Mzc.&gclid=CjwKCAjwxrLHBhA2EiwAu9EdMzYWNJhGcEOPGm-NOXqTekkVqiUou98e09aFpF4yD9uF-s54hJEHKhoCQnAQAvD_BwE&gbraid=0AAAAABxWOfpv-ehCZdC9KjREQJAOq1uaE">
+                    Epicode</a>.
+            </p>
+        </div>
+
+        <!--=============== Primo Eserzio ===============-->
+        <div id="primo-esercizio" class="pagina">
+            <h1>Esercizio 1</h1>
+
+            <div class="container">
+                <div class="item">
+                    <h2>Leonardo Marchese Grasso</h2>
+                    <img src="https://marcheseleo.github.io/Esercizi-Epicode//assets/images/mia_foto.jpg"
+                        alt="Mia foto">
+
+                    <h3>I miei interessi sono</h3>
+                    <ul class="hobbies">
+                        <li>Programmazione in:</li>
+                        <ol>
+                            <li>Java</li>
+                            <li>Html, CSS, JS</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                        </ol>
+                        <li>Realizzazione di circuiti con Arduino</li>
+                        <li>Videogames</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Esperienze</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Scolastiche</th>
+                                <th>Anno</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Diploma di Maturità - Liceo Scientifico "Carlo Miranda", Frattamaggiore (NA)</td>
+                                <td>2014 - 2019</td>
+                            </tr>
+                            <tr>
+                                <td>Laurea in Ingegneria Informatica (Non conseguita) </td>
+                                <td>2019 - 2022 </td>
+                            </tr>
+                            <tr>
+                                <td>Corso base (IBM) di Web Developing</td>
+                                <td>2024</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="item">
+                    <h4>Info</h4>
+                    <ul class="info">
+                        <li>Tel: <span style="color: green;">+39 3667402888</span></li>
+                        <li>Email: <a href="mailto:leonardo.lol.ldp.com">leonardo.lol.ldp.com</a></li>
+                        <li>GitHub: <a href="https://github.com/MarcheseLeo">MarcheseLeo</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--=============== Secondo Eserzio ===============-->
+        <div id="secondo-esercizio" class="pagina">
+            <h1>Esercizio 2</h1>
+
+            <div class="container">
+                <form onsubmit="alert('Registrazione completata')">
+                    <div class="form-field">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome">
+                    </div>
+                    <div class="form-field">
+                        <label for="cognome">Cognome</label>
+                        <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Inserisci la tua mail">
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-field">
+                        <label for="data">Data di nascita</label>
+                        <input type="date" id="data" name="data">
+                    </div>
+                    <div class="form-field">
+                        <label for="numero">Numero di telefono</label>
+                        <input type="number" id="numero" name="numero"
+                            placeholder="Inserisci il tuo numero di telefono">
+                    </div>
+                    <div class="genere-musicale">
+                        <h4>Genere musicale</h4>
+                        <div class="genere">
+                            <input type="checkbox" name="rock" id="rock">
+                            <label for="rock">rock</label>
+
+                            <input type="checkbox" name="metal" id="metal">
+                            <label for="metal">metal</label>
+
+                            <input type="checkbox" name="pop" id="pop">
+                            <label for="pop">pop</label>
+
+                            <input type="checkbox" name="rap" id="rap">
+                            <label for="rap">rap</label>
+
+                            <input type="checkbox" name="country" id="country">
+                            <label for="country">country</label>
+
+                        </div>
+                    </div>
+
+                    <label for="termini">Accetto termini e condizioni</label>
+                    <div class="form-field" id="termini">
+                        <input type="radio" id="accetto" name="accept" value="accetto" checked>
+                        <label for="accetto">Accetto</label>
+                        <input type="radio" id="rifiuto" name="accept" value="rifiuto">
+                        <label for="rifiuto">Rifiuto</label>
+                    </div>
+                    <button type="submit" id="send">Invia registrazione</button>
+                </form>
+            </div>
+        </div>
+
+        <!--=============== Tero esercizio ===============-->
+        <div id="terzo-esercizio" class="pagina">
+            <h1>Esercizio 3</h1>
+
+            <div class="main-section">
+                <div class="image-container"></div>
+                <div class="image-details">
+                    <h1 class="image-place-name">Liberty State Park</h1>
+                    <h3 class="image-location"><ion-icon name="location-sharp"></ion-icon><a
+                            href="https://maps.app.goo.gl/abDhXoY1NPDr5P5S7">Jersey City, United States</a></h3>
+                    <p class="author">
+                        Foto di <a
+                            href="https://unsplash.com/it/@jonathanroger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan
+                            Roger</a> su <a
+                            href="https://unsplash.com/it/foto/edificio-accanto-allo-specchio-dacqua-durante-la-notte-LY1eyQMFeyo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
+                </div>
+
+                <div class="correlated-places">
+                    <h6>Luoghi correlati</h6>
+                    <ul class="places">
+                        <li class="place"><a href="Esercizi/terzo/pages/railroad.html">Central Railroad of New Jersey Terminal</a></li>
+                        <li class="place"><a href="Esercizi/terzo/pages/memorial.html">The Staten Island Memorial</a></li>
+                        <li class="place"><a href="Esercizi/terzo/pages/liberty.html">Reclining Liberty Statue</a></li>
+                        <li class="place"><a href="Esercizi/terzo/pages/ocean.html">Ocean Beach</a></li>
+                        <li class="place"><a href="Esercizi/terzo/pages/empty-sky.html">Empty Sky Memorial</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <p> © 2025 Leonardo | Tutti i diritti sono riservati.</p>
+            </footer>
+
+       </div>
+
+        <!--=============== Quarto esercizio ===============-->
+        <div id="quarto-esercizio" class="pagina">
+            
+
+            <!--=============== Sidebar ===============-->
+            <div id="sidebar">
+                <div class="sidebar-icon">
+                    <ion-icon name="menu-sharp"></ion-icon>
+                </div>
+                <div class="sidebar-icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <p>Home</p>
+                </div>
+                <div class="sidebar-icon">
+                    <ion-icon name="compass-outline"></ion-icon>
+                    <p>Explore</p>
+                </div>
+                <div class="sidebar-icon">
+                    <ion-icon name="albums-outline"></ion-icon>
+                    <p>Library</p>
+                </div>
+                <span class="divider"></span>
+            </div>
+
+            <!--=============== Main ===============-->
+            <div id="main">
+                <!--=============== Tobar ===============-->
+                <div id="topbar">
+                    <img src="assets/images/yt-logo.svg" alt="youtube-logo" id="logo">
+                    <div id="search-wrapper">
+                        <input type="text" placeholder="Search on Youtube" id="searchbar">
+                        <button>
+                            <div id="search-btn">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                        </button>
+                        <div id="mic-icon">
+                            <ion-icon name="mic-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div id="topbar-icons">
+                        <div class="topbar-icon">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </div>
+                        <div class="topbar-icon">
+                            <ion-icon name="notifications-outline"></ion-icon>
+                        </div>
+                        <div class="topbar-icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <!--=============== Content ===============-->
+                <div id="content">
+                    <!--=============== Card ===============-->
+                    <div class="card">
+                        <img src="assets/images/epicode_thumb.png" alt="thumbnail" class="thumbnail">
+                        <div class="video-info">
+                            <img src="assets/images/epicode-logo.png" alt="logo" class="logo">
+                            <div class="video-details">
+                                <p class="title">Title</p>
+                                <p class="description">Desription</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/epicode_thumb.png" alt="thumbnail" class="thumbnail">
+                        <div class="video-info">
+                            <img src="assets/images/epicode-logo.png" alt="logo" class="logo">
+                            <div class="video-details">
+                                <p class="title">Title</p>
+                                <p class="description">Desription</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/epicode_thumb.png" alt="thumbnail" class="thumbnail">
+                        <div class="video-info">
+                            <img src="assets/images/epicode-logo.png" alt="logo" class="logo">
+                            <div class="video-details">
+                                <p class="title">Title</p>
+                                <p class="description">Desription</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/epicode_thumb.png" alt="thumbnail" class="thumbnail">
+                        <div class="video-info">
+                            <img src="assets/images/epicode-logo.png" alt="logo" class="logo">
+                            <div class="video-details">
+                                <p class="title">Title</p>
+                                <p class="description">Desription</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/epicode_thumb.png" alt="thumbnail" class="thumbnail">
+                        <div class="video-info">
+                            <img src="assets/images/epicode-logo.png" alt="logo" class="logo">
+                            <div class="video-details">
+                                <p class="title">Title</p>
+                                <p class="description">Desription</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/epicode_thumb.png" alt="thumbnail" class="thumbnail">
+                        <div class="video-info">
+                            <img src="assets/images/epicode-logo.png" alt="logo" class="logo">
+                            <div class="video-details">
+                                <p class="title">Title</p>
+                                <p class="description">Desription</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="container">
-        <h2 style="display: block;">Home</h2>
-        <p>Benvenuto nella home della mia pagina.
-            Qui pubblico tutti gli esercizi, da me svolti, del pre-corso di Web Developer di <a class="epicode"
-                href="https://epicode.com/it/corso-web-developer-part-time/?_gl=1*v1tzam*_up*MQ..*_gs*MQ..*_ga*MTg0MTUwMDIwNC4xNzYwMzY2MjE5*_ga_3K2ZX8G699*czE3NjAzNjYyMTkkbzEkZzAkdDE3NjAzNjYyMTkkajYwJGwwJGg5MTU2ODQ2Mzc.&gclid=CjwKCAjwxrLHBhA2EiwAu9EdMzYWNJhGcEOPGm-NOXqTekkVqiUou98e09aFpF4yD9uF-s54hJEHKhoCQnAQAvD_BwE&gbraid=0AAAAABxWOfpv-ehCZdC9KjREQJAOq1uaE">
-                Epicode</a>.
-        </p>
-    </div>
+    <script>
+        function cambiaPagina(idPaginaDaMostrare) {
+            var pagine = document.querySelectorAll('.pagina');
+
+            pagine.forEach(function (div) {
+                div.style.display = 'none';
+            });
+
+            var paginaScelta = document.getElementById(idPaginaDaMostrare);
+            if (paginaScelta) {
+                if(paginaScelta.id === 'quarto-esercizio'){
+                    paginaScelta.style.display = 'flex';
+                } else
+                paginaScelta.style.display = 'block';
+            }
+        }
+
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('myNavBar');
+
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        function changeBodyCoulor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 
