@@ -9,7 +9,7 @@ Una repository per la pubblicazione degli esercizi del pre-corso di Epicode
 An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
-Per visualizzare il sito Github Pages clicca [qui](marcheseleo.github.io/Esercizi-Epicode/)
+Per visualizzare il sito Github Pages clicca [qui](https://marcheseleo.github.io/Esercizi-Epicode/)
 
 ## Help
 
