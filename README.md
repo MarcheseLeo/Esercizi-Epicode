@@ -22,15 +22,14 @@ Per visualizzare il sito clicca [qui](https://marcheseleo.github.io/Esercizi-Epi
 
 ### Built With
 
-* ![HTML5][HTML5.js]
-* ![CSS][CSS.js]
-* ![JavaScript][JavaScript.js]
-* ![GitHub][GitHub.js]
+* ![HTML5][HTML5-shield]
+* ![CSS][CSS-shield]
+* ![JavaScript][JavaScript-shield]
+* ![GitHub][GitHub-shield]
 
 
-
-[HTML5.js]: https://img.shields.io/badge/HTML-5+-E34F26?logo=html5
-[CSS.js]: https://img.shields.io/badge/css-gray?style=for-the-badge&logo=css&logoColor=white
-[JavaScript.js]: https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square
-[GitHub.js]: https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white
+[HTML5-shield]: https://img.shields.io/badge/logo-HTML5-e34f26?logo=html5&amp;label=&amp;labelColor=555555&amp;logoColor=white
+[CSS-shield]: https://img.shields.io/badge/css-gray?style=for-the-badge&logo=css&logoColor=white
+[JavaScript-shield]: https://shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=flat-square
+[GitHub-shield]: https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white
 
